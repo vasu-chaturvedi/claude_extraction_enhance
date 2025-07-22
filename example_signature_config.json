@@ -1,0 +1,19 @@
+{
+  "package_name": "SIGNATURE_PKG",
+  "procedures": [],
+  "spool_output_path": "/tmp/signature_output",
+  "run_insertion_parallel": false,
+  "run_extraction_parallel": false,
+  "use_proc_level_parallel": false,
+  "template_path": "/tmp/templates",
+  "format": "delimited",
+  "delimiter": ",",
+  "signature_extraction": {
+    "signature_query": "SELECT signature_id, signature_blob, document_name FROM signatures WHERE sol_id = :1",
+    "signature_output_directory": "/tmp/signatures",
+    "filename_column": "document_name",
+    "filename_prefix": "signature",
+    "image_format": "",
+    "create_subdirectories": true
+  }
+}
